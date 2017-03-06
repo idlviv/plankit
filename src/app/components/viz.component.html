@@ -2,20 +2,48 @@
 <div class="container-fluid">
 
   <div *ngFor="let slide of slides">
-    <!--<div [class]="divClass" *ngIf="slide.show" >-->
     <div *ngIf="slide.show" >
+    <!--<div [class]="divClass" *ngIf="slide.show" >-->
       <h2>{{slide.title}} {{slide.show}}</h2>
       <p>{{slide.text}}</p>
+      <div class="row">
+
+
+          <div class="container-fluid">
+            <img class="img-responsive" src="{{slide.src}}" alt="">
+          </div>
+
+        </div>
+      </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-6 col-md-4 col-lg-3">
+      <img class="img-responsive tmbn" src="{{slides[0].src}}" (click)="toggle(0)" alt="">
     </div>
+    <div class="col-xs-6 col-md-4 col-lg-3">
+      <img class="img-responsive tmbn" src="{{slides[1].src}}" (click)="toggle(1)" alt="">
+    </div>
+    <div class="col-xs-6 col-md-4 col-lg-3">
+      <img class="img-responsive tmbn" src="{{slides[2].src}}" (click)="toggle(2)" alt="">
+    </div>
+    <div class="col-xs-6 col-md-4 col-lg-3">
+      <img class="img-responsive tmbn" src="{{slides[3].src}}" (click)="toggle(3)" alt="">
+    </div>
+    <div class="col-xs-6 col-md-4 col-lg-3">
+      <img class="img-responsive tmbn" src="{{slides[4].src}}" (click)="toggle(4)" alt="">
+    </div>
+    <div class="col-xs-6 col-md-4 col-lg-3">
+      <img class="img-responsive tmbn" src="{{slides[5].src}}" (click)="toggle(5)" alt="">
+    </div>
+
+    <!--<button type="button" class="btn btn-default" (click)="toggle(0)">One</button>-->
+    <!--<button type="button" class="btn btn-default" (click)="toggle(1)">Two</button>-->
+    <!--<button type="button" class="btn btn-default" (click)="toggle(2)">Three</button>-->
   </div>
-  <div class="row">
-    <button type="button" class="btn btn-default" (click)="toggle(0)">One</button>
-    <button type="button" class="btn btn-default" (click)="toggle(1)">Two</button>
-    <button type="button" class="btn btn-default" (click)="toggle(2)">Three</button>
-  </div>
-  <div class="row">
-    <button type="button" class="btn btn-default" (click)="toggle(3)">One</button>
-    <button type="button" class="btn btn-default" (click)="toggle(4)">Two</button>
-    <button type="button" class="btn btn-default" (click)="toggle(5)">Three</button>
-  </div>
+  <!--<div class="row">-->
+    <!--<button type="button" class="btn btn-default" (click)="toggle(3)">One</button>-->
+    <!--<button type="button" class="btn btn-default" (click)="toggle(4)">Two</button>-->
+    <!--<button type="button" class="btn btn-default" (click)="toggle(5)">Three</button>-->
+  <!--</div>-->
 </div>
