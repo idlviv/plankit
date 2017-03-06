@@ -1,4 +1,5 @@
 import { Component} from '@angular/core';
+import { slides } from './data';
 
 
 @Component({
@@ -10,7 +11,7 @@ import { Component} from '@angular/core';
 export class VizComponent  {
   name: string;
   slides: any;
-  divClass: string;
+  // divClass: string;
   isHidden: boolean;
 
   constructor() {
@@ -19,58 +20,19 @@ export class VizComponent  {
     this.isHidden = false;
 
     this.name = 'Name';
-    this.slides = [
-      {
-        title: 'tab0',
-        text: 'Bla bla bla',
-        show: true,
-        active: true,
-        src: './assets/greyjoy.jpg',
-      },
-      {
-        title: 'tab1',
-        text: 'Bla bla bla',
-        show: false,
-        active: true,
-        src: './assets/stark.jpg',
-      },
-      {
-        title: 'tab2',
-        text: 'Bla bla bla',
-        show: false,
-        active: true,
-        src: './assets/lannister.jpg',
-      },
-      {
-        title: 'tab3',
-        text: 'Bla bla bla',
-        show: false,
-        active: true,
-        src: './assets/baratheon.jpg',
-      },
-      {
-        title: 'tab4',
-        text: 'Bla bla bla',
-        show: false,
-        active: true,
-        src: './assets/reed.jpg',
-      },
-      {
-        title: 'tab5',
-        text: 'Bla bla bla',
-        show: false,
-        active: true,
-        src: './assets/selmy.jpg',
-      },
-    ]
+    this.slides = slides;
   }
 
-  toggle(tab: number) {
-    this.slides.forEach(function(item: any) {
-      item.show = false;
-      // console.log(item);
-    });
-    this.slides[tab].show = true;
+  toggle(e, tab: number) {
+    // console.log(e.target);
+
+    // this.slides.forEach(function(item: any) {
+    //   item.show = false;
+    //   // console.log(item);
+    // });
+    // this.slides[tab].show = true;
+
+    // e.target.classList.remove('.tmbn')
   }
 }
 

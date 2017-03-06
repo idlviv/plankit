@@ -1,40 +1,40 @@
 <h1>Hello {{name}}</h1>
 <div class="container-fluid">
 
-  <div *ngFor="let slide of slides">
-    <div *ngIf="slide.show" >
-    <!--<div [class]="divClass" *ngIf="slide.show" >-->
-      <h2>{{slide.title}} {{slide.show}}</h2>
-      <p>{{slide.text}}</p>
-      <div class="row">
+  <!--<div *ngFor="let slide of slides">-->
+    <!--<div *ngIf="slide.show" >-->
+    <!--&lt;!&ndash;<div [class]="divClass" *ngIf="slide.show" >&ndash;&gt;-->
+      <!--<h2>{{slide.title}} {{slide.show}}</h2>-->
+      <!--<p>{{slide.text}}</p>-->
+      <!--<div class="row">-->
 
 
-          <div class="container-fluid">
-            <img class="img-responsive" src="{{slide.src}}" alt="">
-          </div>
+          <!--<div class="container-fluid">-->
+            <!--<img class="img-responsive" src="{{slide.src}}" alt="">-->
+          <!--</div>-->
 
-        </div>
-      </div>
-  </div>
+        <!--</div>-->
+      <!--</div>-->
+  <!--</div>-->
 
   <div class="row">
-    <div class="col-xs-6 col-md-4 col-lg-3">
-      <img class="img-responsive tmbn" src="{{slides[0].src}}" (click)="toggle(0)" alt="">
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      <img class="img-responsive tmbn" src="{{slides[0].src}}" (click)="toggle($event, 0)" alt="">
     </div>
-    <div class="col-xs-6 col-md-4 col-lg-3">
-      <img class="img-responsive tmbn" src="{{slides[1].src}}" (click)="toggle(1)" alt="">
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      <img class="img-responsive tmbn" src="{{slides[1].src}}" (click)="toggle($event, 1)" alt="">
     </div>
-    <div class="col-xs-6 col-md-4 col-lg-3">
-      <img class="img-responsive tmbn" src="{{slides[2].src}}" (click)="toggle(2)" alt="">
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      <img class="img-responsive tmbn" src="{{slides[2].src}}" (click)="toggle($event, 2)" alt="">
     </div>
-    <div class="col-xs-6 col-md-4 col-lg-3">
-      <img class="img-responsive tmbn" src="{{slides[3].src}}" (click)="toggle(3)" alt="">
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      <img class="img-responsive tmbn" src="{{slides[3].src}}" (click)="toggle($event, 3)" alt="">
     </div>
-    <div class="col-xs-6 col-md-4 col-lg-3">
-      <img class="img-responsive tmbn" src="{{slides[4].src}}" (click)="toggle(4)" alt="">
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      <img class="img-responsive tmbn" src="{{slides[4].src}}" (click)="toggle($event, 4)" alt="">
     </div>
-    <div class="col-xs-6 col-md-4 col-lg-3">
-      <img class="img-responsive tmbn" src="{{slides[5].src}}" (click)="toggle(5)" alt="">
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      <img class="img-responsive tmbn" src="{{slides[5].src}}" (click)="toggle($event, 5)" alt="">
     </div>
 
     <!--<button type="button" class="btn btn-default" (click)="toggle(0)">One</button>-->
