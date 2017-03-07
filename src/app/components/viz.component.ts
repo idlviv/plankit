@@ -23,16 +23,15 @@ export class VizComponent  {
     this.slides = slides;
   }
 
-  toggle(e, tab: number) {
-    // console.log(e.target);
+  toggle(tab: number) {
 
-    // this.slides.forEach(function(item: any) {
-    //   item.show = false;
-    //   // console.log(item);
-    // });
-    // this.slides[tab].show = true;
+    this.slides.forEach(function(item: any) {
+      item.show = false;
+      // console.log(item);
+    });
+    this.slides[tab].show = true;
 
-    // e.target.classList.remove('.tmbn')
+
   }
 }
 
