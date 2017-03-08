@@ -1,6 +1,5 @@
-import { Component} from '@angular/core';
-import { slides } from './data';
-
+import { Component, Input} from '@angular/core';
+import { Slides } from './slides';
 
 @Component({
   moduleId: module.id,
@@ -9,29 +8,9 @@ import { slides } from './data';
   styleUrls: ['./viz.component.css']
 })
 export class VizComponent  {
-  name: string;
-  slides: any;
-  // divClass: string;
-  isHidden: boolean;
+  @Input() slide: Slides;
 
   constructor() {
-
-    // this.divClass = 'red';
-    this.isHidden = false;
-
-    this.name = 'Name';
-    this.slides = slides;
-  }
-
-  toggle(tab: number) {
-
-    this.slides.forEach(function(item: any) {
-      item.show = false;
-      // console.log(item);
-    });
-    this.slides[tab].show = true;
-
-
   }
 }
 

@@ -1,10 +1,6 @@
-.tmbn {
-  width: 300px;
-  height: 300px;
+.main_pic {
+  width: 400px;
+  height: 400px;
   padding: 5px;
-}
-.tmbn3 {
-  width: 500px;
-  height: 500px;
-  padding: 5px;
+  float: left;
 }
