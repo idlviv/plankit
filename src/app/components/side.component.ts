@@ -12,6 +12,7 @@ export class SideComponent {
   isHidden: boolean;
   @Output() choose = new EventEmitter();
   @Input() slides: Slides[];
+  selectedForZoom: number;
 
   constructor() {
     this.isHidden = false;
@@ -20,5 +21,10 @@ export class SideComponent {
 
   onChoose(slide) {
     this.choose.emit(slide);
+  }
+
+  resize(i) {
+    this.selectedForZoom = i;
+
   }
 }
