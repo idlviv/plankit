@@ -22,13 +22,19 @@
       <ul class="nav navbar-nav" (click)="hide()">
         <li [routerLinkActive]="['active']"><a routerLink="home">Home<span class="sr-only">(current)</span></a></li>
         <li [routerLinkActive]="['active']"><a routerLink="about">About</a></li>
-
       </ul>
-
-
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+<div class="jumbotron text-center">
+  <div class="container">
+    <div class="row">
+      <div>
+        <h1>ПВХ плитка - Планкіт</h1>
+      </div>
+    </div>
+  </div>
+</div>
 <div class="container-fluid" align="center">
-<router-outlet></router-outlet>
+  <router-outlet></router-outlet>
 </div>
