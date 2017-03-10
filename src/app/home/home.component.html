@@ -1,17 +1,18 @@
-
-
-  <div class="row">
-    <!--<div class="col-xs-0 col-sm-0 col-md-4 col-lg-4">-->
-
-      <side (choose)="choose($event)" [slides]="slides"></side>
-    <!--</div>-->
-    </div>
-    <div class="row">
-    <!--<div class="col-xs-0 col-sm-0 col-md-8 col-lg-8">-->
-      <viz [slide]="slide"></viz>
-    <!--</div>-->
+<div class="container">
+  <div class="row" align="center">
+    <carousel-component></carousel-component>
+    <hr>
   </div>
-
+  <div class="row">
+    <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2" align="center">
+      <side-component (choose)="choose($event)" [slides]="slides"></side-component>
+    </div>
+    <div class="col-xs-12 col-sm-9 col-md-10 col-lg-10">
+      <viz-component [slide]="slide"></viz-component>
+      <content-component></content-component>
+    </div>
+  </div>
+</div>
 
 
 

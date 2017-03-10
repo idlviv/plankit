@@ -3,7 +3,7 @@ import { Slides } from './slides';
 
 @Component({
   moduleId: module.id,
-  selector: 'side',
+  selector: 'side-component',
   templateUrl: './side.component.html',
   styleUrls: ['./side.component.css']
 })

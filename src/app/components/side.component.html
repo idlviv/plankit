@@ -1,9 +1,7 @@
-<div class="container">
-  <div class="row">
-
-    <div class="col-md-3 col-sm-3 col-xs-4" *ngFor="let slide of slides; let i = index" >
-      <img [class]="(i === selectedForZoom ? 'tmbn300 img-responsive thumbnail' : 'tmbn150 img-responsive thumbnail')"
+  <div class="row scrolling">
+    <div class="col-xs-4 col-sm-12 col-md-12 col-lg-12" *ngFor="let slide of slides; let i = index">
+      <img [class]="(i === selectedForZoom ? 'tmbn150 img-responsive thumbnail' : 'tmbn150 img-responsive thumbnail')"
            src="{{slide.src}}" (click)="onChoose(slide)" alt="" (click)="resize(i)" >
     </div>
   </div>
-</div>
+

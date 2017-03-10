@@ -3,7 +3,7 @@ import { Slides } from './slides';
 
 @Component({
   moduleId: module.id,
-  selector: 'viz',
+  selector: 'viz-component',
   templateUrl: './viz.component.html',
   styleUrls: ['./viz.component.css']
 })
