@@ -15,5 +15,5 @@
 .scrolling {
   overflow: auto;
   width: 100%;
-  height: 99vh;
+  height: 100%;
 }
